@@ -1,0 +1,5 @@
+git tag -d innermaven-0.1
+git push --delete origin innermaven-0.1
+git push -f
+mvn clean release:clean release:prepare release:perform | tee out
+
